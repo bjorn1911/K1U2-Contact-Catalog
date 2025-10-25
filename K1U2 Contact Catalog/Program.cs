@@ -6,7 +6,7 @@ namespace K1U2_Contact_Catalog
     {
         static void Main(string[] args)
         {
-            CatalogService Contacts = new(true);
+            MenuService menu = new();
 
         }
     }

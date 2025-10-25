@@ -8,12 +8,17 @@ namespace K1U2_Contact_Catalog.Models
 {
     public class Contact
         {
-            public string _name { get; set; }
-            public string _email { get; set; }
+        private int _id { get; set; }
+        private string _name { get; set; }
+        private string _email { get; set; }
 
-            private List<string> _tags = new();
+        private List<string> _tags = new();
 
-            public void SetName(string name)
+        public Contact(int ID)
+        {
+            _id = ID;
+        }
+        public void SetName(string name)
             {
                 _name = name;
 
