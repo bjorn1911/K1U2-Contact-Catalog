@@ -1,10 +1,13 @@
-﻿namespace K1U2_Contact_Catalog
+﻿using K1U2_Contact_Catalog.Services;
+
+namespace K1U2_Contact_Catalog
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            CatalogService Contacts = new(true);
+
         }
     }
 }

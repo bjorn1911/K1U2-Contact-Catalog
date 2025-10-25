@@ -60,7 +60,7 @@ namespace K1U2_Contact_Catalog.Menu
 
         public static void PressKeyToContinue()
         {
-            Console.WriteLine("\nTask Complete! Press any key to continue...");
+            Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
         }
     }
