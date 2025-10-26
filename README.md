@@ -10,8 +10,11 @@ Olika designval:
 VIKTIG GREJ!
 Jag uppfyller inte kraven på Moq alls, och TDD gjorde jag bara ett par små tester i för sakens skull.
 Som Malin vet har jag någon slags blockad mot att skriva kod som jag inte förstår. Jag skulle antagligen kunnat slänga ihop Moq och mer testning för att ge sken av att jag klarat uppgiften, men jag kan inte göra det.
+
 Jag håller på att fördjupa mig i egna studier för att verkligen förstå hur testdriven utveckling fungerar, men jag behärskar det inte ännu.
-Jag argumenterar att testdriven utveckling bygger på att man startar med testerna innan man bygger koden. Att försöka klämma in det i redan färdig kod utan att förstå exakt hur det fungerar, är för mig en styggelse.
+
+Jag argumenterar att testdriven utveckling bygger på att man startar med testerna innan man bygger koden. Att försöka klämma in det i redan färdig kod utan att förstå exakt hur det fungerar är för mig en styggelse.
+
 Därför ber jag om överseende med dessa punkter och lovar och svär på att jag kommer se till att det sitter som gjutet i mitt huvud snart. Jag hoppas att min förståelse kommer öka när jag börjar använda det där det faktiskt behövs.
 
 ![NETX25-K1U2-Running_Contact_Catalog](https://github.com/user-attachments/assets/d73dd0f4-2f51-4b4f-8376-9864f1ac8f6d)
