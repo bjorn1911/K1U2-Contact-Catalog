@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace K1U2_Contact_Catalog.Menu
 {
-    static class Prompts
+    static class Prompts // Class to take care of most output to the console to keep other code cleaner.
     {
         public static void MainMenu()
         {
@@ -15,8 +15,8 @@ namespace K1U2_Contact_Catalog.Menu
             Console.WriteLine("1. Add Contact");
             Console.WriteLine("2. Find Contact");
             Console.WriteLine("3. List Contacts by Tags");
-            Console.WriteLine("4. List all Contacts Alphabetically");
-            Console.WriteLine("5. Export Contacts");
+            Console.WriteLine("4. List all Contacts");
+            //Console.WriteLine("5. Export Contacts");
             Console.WriteLine("0. Exit\n");
 
             Console.Write("Select an option: ");
