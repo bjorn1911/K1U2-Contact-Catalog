@@ -17,5 +17,7 @@ namespace K1U2_Contact_Catalog.Services
             }
             catch { return false; }
         }
+
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace K1U2_Contact_Catalog.Menu
 {
-    static class Menu
+    static class Prompts
     {
         public static void MainMenu()
         {
@@ -24,14 +24,26 @@ namespace K1U2_Contact_Catalog.Menu
 
         }
 
-        public static void FindContactMenu()
+        public static string AskForName()
+        {
+            return "Please enter the name: ";
+        }
+        public static string AskForEmail()
+        {
+            return "Please enter Email Address: ";
+        }
+
+        public static string AskForTags()
+        {
+            return "Please enter tags (separate each tag with a comma): ";
+        }
+
+        public static void FindContact()
         {
             PrintHeader("Find Contacts");
+            Console.Write("Search for: ");
         }
-        static void FindContact()
-        {
-            PrintHeader("find contact");
-        }
+
 
         static void ExportContact()
         {
