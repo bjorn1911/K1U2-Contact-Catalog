@@ -8,7 +8,7 @@ Olika designval:
 - Jag jobbar mycket med statiska klasser där jag kan, vilket försvårade en del när jag experimenterade med tests.
 
 VIKTIG GREJ!
-Jag uppfyller inte kraven på Moq alls, och TDD gjorde jag bara ett par små tester i för sakens skull.
+Jag uppfyller inte kraven på Moq alls, och xunit gjorde jag bara ett par små tester i för sakens skull.
 Som Malin vet har jag någon slags blockad mot att skriva kod som jag inte förstår. Jag skulle antagligen kunnat slänga ihop Moq och mer testning för att ge sken av att jag klarat uppgiften, men jag kan inte göra det.
 
 Jag håller på att fördjupa mig i egna studier för att verkligen förstå hur testdriven utveckling fungerar, men jag behärskar det inte ännu.
