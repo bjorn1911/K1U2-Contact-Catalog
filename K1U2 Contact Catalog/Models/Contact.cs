@@ -7,63 +7,59 @@ using System.Threading.Tasks;
 namespace K1U2_Contact_Catalog.Models
 {
     public class Contact
+    {
+        private int _id { get; set; }
+        private string _name { get; set; }
+        private string _email { get; set; }
+
+        private List<string> _tags = new();
+
+        public Contact(int ID)
         {
-            public string _name { get; set; }
-            public string _email { get; set; }
+            _id = ID;
+        }
 
-            private List<string> _tags = new();
+        public int GetID()
+        {
+            return _id;
+        }
 
-            public void SetName(string name)
-            {
-                _name = name;
-
-            }
-
-            public string GetName()
-            {
-                return _name;
-            }
-
-            public void AddTag(string tag)
-            {
-                _tags.Add(tag);
-            }
-
-            public bool SetEmail(string email)
-            {
-                if (IsValidEmail(email))
-                {
-                    _email = email;
-                    return true;
-
-                }
-                else { return false; }
-            }
-
-            public string GetEmail()
-            {
-                return _email;
-            }
-
-            public string GetTagsAsString() // Returns all tags as a single string with each tag in brackets
-            {
-                string tags = "Tags: ";
-                foreach (var tag in _tags) { tags += $"[{tag}]"; }
-                return tags;
-            }
-
-            public
-
-            static bool IsValidEmail(string email) // Stolen from the code we were given 
-            {
-                try
-                {
-                    var addr = new System.Net.Mail.MailAddress(email);
-                    return addr.Address == email;
-                }
-                catch { return false; }
-            }
+        public void SetName(string name)
+        {
+            _name = name;
 
         }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public void AddTag(string tag)
+        {
+            _tags.Add(tag);
+        }
+
+        public void SetEmail(string email)
+        {
+
+            _email = email;
+        }
+
+        public string GetEmail()
+        {
+            return _email;
+        }
+
+        public string GetTagsAsString() // Returns all tags as a single string with each tag in brackets
+        {
+            string tags = "Tags: ";
+            foreach (var tag in _tags) { tags += $"{tag} "; }
+            return tags;
+        }
+
+
+
+    }            
 }
 

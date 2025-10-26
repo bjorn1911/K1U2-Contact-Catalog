@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace K1U2_Contact_Catalog.Menu
 {
-    static class Menu
+    static class Prompts // Class to take care of most output to the console to keep other code cleaner.
     {
         public static void MainMenu()
         {
@@ -14,24 +14,35 @@ namespace K1U2_Contact_Catalog.Menu
             PrintHeader("CONTACT-O-TRON 2000");
             Console.WriteLine("1. Add Contact");
             Console.WriteLine("2. Find Contact");
-            Console.WriteLine("3. Export Contacts");
-            Console.WriteLine("4. List all Contacts Alphabetically");
-            Console.WriteLine("0. Exit");
-
-            Console.WriteLine(""); // Create a space before input
+            Console.WriteLine("3. List Contacts by Tags");
+            Console.WriteLine("4. List all Contacts");
+            //Console.WriteLine("5. Export Contacts");
+            Console.WriteLine("0. Exit\n");
 
             Console.Write("Select an option: ");
 
         }
 
-        public static void FindContactMenu()
+        public static string AskForName()
+        {
+            return "Please enter the name: ";
+        }
+        public static string AskForEmail()
+        {
+            return "Please enter Email Address: ";
+        }
+
+        public static string AskForTags()
+        {
+            return "Please enter tags (separate each tag with a comma): ";
+        }
+
+        public static void FindContact()
         {
             PrintHeader("Find Contacts");
+            Console.Write("Search for: ");
         }
-        static void FindContact()
-        {
-            PrintHeader("find contact");
-        }
+
 
         static void ExportContact()
         {
@@ -60,7 +71,7 @@ namespace K1U2_Contact_Catalog.Menu
 
         public static void PressKeyToContinue()
         {
-            Console.WriteLine("\nTask Complete! Press any key to continue...");
+            Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
         }
     }
