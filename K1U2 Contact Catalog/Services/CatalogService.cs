@@ -78,8 +78,13 @@ namespace K1U2_Contact_Catalog.Services
                         ShowContactService.FindEmail(contacts, searchTerm);
                         ShowContactService.FindTag(contacts, searchTerm);
                         Prompts.PressKeyToContinue();
-
                         break;
+
+                    case "3":
+                        ShowContactService.ListContactsByTags(contacts);
+                        Prompts.PressKeyToContinue();
+                        break;
+
                     case "4":
                         Prompts.PrintHeader("All Contacts");
                         ShowContactService.ListContacts(contacts);

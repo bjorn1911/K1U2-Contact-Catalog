@@ -65,5 +65,15 @@ namespace K1U2_Contact_Catalog.Services
                 ListContacts(results.ToDictionary(c => c.GetID(), c => c));
             }
         }
+
+        public static void ListContactsByTags(Dictionary<int, Contact> contacts)
+        {
+            var sortedContacts = contacts.Values
+                .OrderBy(c => c.GetTagsAsString())
+                .ThenBy(c => c.GetName())
+                .ToList();
+            Console.WriteLine("Contacts Sorted by Tags:");
+            ListContacts(sortedContacts.ToDictionary(c => c.GetID(), c => c));
+        }
     }
 }
