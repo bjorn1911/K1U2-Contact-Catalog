@@ -1,22 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using K1U2_Contact_Catalog.Menu;
 using K1U2_Contact_Catalog.Models;
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Quic;
-using System.Linq.Expressions;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Net.Quic;
+//using System.Linq.Expressions;
+//using System.IO;
+using Microsoft.Extensions.Logging;
+
 
 
 
 namespace K1U2_Contact_Catalog.Services
-{
+{   
     public class CatalogService
     {
         private int _nextID = 1;
-        
+
+        private ILogger<CatalogService> _logger; // I don't understand the logging stuff entirely yet. I'm implementing some code to fulfill the requirement, but I need to study this more
+
         Dictionary<int, Contact> contacts = new ();
         HashSet<string> emails = new(StringComparer.OrdinalIgnoreCase);
 
@@ -66,6 +71,9 @@ namespace K1U2_Contact_Catalog.Services
 
                         contacts.Add(newContact.GetID(), newContact); // Only add contact if email is unique
                         Console.WriteLine($"[{newContact.GetID()}] {newContact.GetName()} ({newContact.GetEmail()}) added to Contact Catalog");
+
+                        //_logger.LogInformation($"{newContact.GetName()} saved!"); // Logging example
+
                         _nextID++;
                         Prompts.PressKeyToContinue();
 
@@ -90,7 +98,7 @@ namespace K1U2_Contact_Catalog.Services
                         ShowContactService.ListContacts(contacts);
                         Prompts.PressKeyToContinue();
                         break;
-
+                   
                     case "0":
                         running = false;
                         break;
