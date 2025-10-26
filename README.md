@@ -1,5 +1,3 @@
-![NETX25-K1U2-Running_Contact_Catalog](https://github.com/user-attachments/assets/d73dd0f4-2f51-4b4f-8376-9864f1ac8f6d) << Bild av körning
-
 Hur man kör:
 Plocka repo från master eller Development - båda bransches är likadana nu
 Kör koden, och det borde vara ganska straight forward hur man använder det tycker jag.
@@ -15,3 +13,5 @@ Som Malin vet har jag någon slags blockad mot att skriva kod som jag inte förs
 Jag håller på att fördjupa mig i egna studier för att verkligen förstå hur testdriven utveckling fungerar, men jag behärskar det inte ännu.
 Jag argumenterar att testdriven utveckling bygger på att man startar med testerna innan man bygger koden. Att försöka klämma in det i redan färdig kod utan att förstå exakt hur det fungerar, är för mig en styggelse.
 Därför ber jag om överseende med dessa punkter och lovar och svär på att jag kommer se till att det sitter som gjutet i mitt huvud snart. Jag hoppas att min förståelse kommer öka när jag börjar använda det där det faktiskt behövs.
+
+![NETX25-K1U2-Running_Contact_Catalog](https://github.com/user-attachments/assets/d73dd0f4-2f51-4b4f-8376-9864f1ac8f6d)
